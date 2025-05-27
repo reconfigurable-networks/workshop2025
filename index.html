@@ -1,0 +1,1500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" 
+    content="">
+  <meta name="author" content="">
+
+  <title>Workshop on Reconfigurable Networks 2025</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.min.css?version=6969" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/scrolling-nav.css?version=387" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <!-- Open Sans, nice font -->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,500,600,700,700italic' rel='stylesheet' type='text/css'>
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Favion -->
+  <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <style>
+    .badge{display:inline-block;padding:.5em .7em .5em .7em;font-size:15px;font-weight:600;line-height:1;text-align:center;white-space:nowrap;vertical-align:baseline;border-radius:5rem;
+      background-color:#808080;box-shadow: rgba(100, 100, 100, 0.25) 2px 2px 5px;font-family: 'Noto Sans', 'Helvetica Neue', 'Arial', sans-serif;}
+
+      .bss{
+
+      }
+      .bss:hover{
+        text-decoration:none;
+      }
+
+      .bs-callout {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin: 15px 0px 0px 0;
+        border: 0px solid;
+        border-left-width: 0px;
+        border-left-color: #fff;
+        /*border: 0px solid #eee;*/
+        border-radius: 0px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+      }
+  </style>
+
+
+<style>
+/*! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com*/
+*,:after,:before{border:0 solid #e5e7eb;box-sizing:border-box}:after,:before{--tw-content:""}
+
+html{-webkit-text-size-adjust:100%;font-feature-settings:normal;font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;font-variation-settings:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4}body{line-height:inherit;margin:0}hr{border-top-width:1px;color:inherit;height:0}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}
+
+code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-size:1em}
+
+small{font-size:80%}
+
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+
+sub{bottom:-.25em}
+
+sup{top:-.5em}
+
+table{border-collapse:collapse;border-color:inherit;text-indent:0}
+
+button,input,optgroup,select,textarea{font-feature-settings:inherit;color:inherit;font-family:inherit;font-size:100%;font-variation-settings:inherit;font-weight:inherit;line-height:inherit;margin:0;padding:0}
+
+button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{color:#9ca3af;opacity:1}input::placeholder,textarea::placeholder{color:#9ca3af;opacity:1}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,object,svg,video{display:block;vertical-align:middle}video{height:auto;max-width:100%}[hidden]{display:none}*,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }:root{--max-width:1200px}.bg-img{background-image:url(/images/bg.png);background-repeat:repeat;min-height:100%;min-width:100%}.limit-width{margin-left:auto;margin-right:auto;max-width:1200px;max-width:var(--max-width)}.menu-hamburger{--tw-bg-opacity:1;align-items:center;background-color:#e2e8f0;background-color:rgb(226 232 240/var(--tw-bg-opacity));border-radius:25px;box-shadow:0 0 5px #6e839d;display:flex;flex-direction:column;height:50px;justify-content:center;margin-left:calc((min(1200px,100vw) - (min(1200px,100vw)*0.96))/2);margin-left:calc((min(var(--max-width),100vw) - (min(var(--max-width),100vw)*0.96))/2);margin-top:1em;opacity:1;padding-bottom:4px;position:fixed;transform:translateX(0);transition:opacity .7s ease-in-out .7s,transform .7s ease-in-out .7s;width:50px;z-index:20}.menu-hamburger:hover{box-shadow:0 0 10px #6e839d;cursor:pointer;scale:110%;transition:box-shadow 0s}.menu-hamburger.close{opacity:0;transform:translateX(-100px);transition:all .6s ease-in-out 0s}.menu-hamburger-line{background:#1d2e45;border-radius:10px;height:3px;margin-top:5px;width:25px}
+
+.nav-bar.show{height:3.5rem;margin-top:.6em;max-width:1200px;max-width:var(--max-width);opacity:1;transform:translateX(0)}.nxt-link-btn{--tw-border-opacity:1;--tw-text-opacity:1;align-items:center;border-color:#94a3b8;border-color:rgb(148 163 184/var(--tw-border-opacity));border-right-width:1.5px;color:#000;color:rgb(0 0 0/var(--tw-text-opacity));display:flex;height:100%;justify-content:center;text-align:center}@media (min-width:640px){.nxt-link-btn{font-size:.875rem;line-height:1.25rem}}@media (min-width:768px){.nxt-link-btn{font-size:1.125rem;line-height:1.75rem}}@media (min-width:1024px){.nxt-link-btn{font-size:1.25rem;line-height:1.75rem}}.nxt-link-btn{cursor:pointer;transition:.8s ease-in-out;vertical-align:middle}.nxt-link-btn:first-child{border-radius:15px 0 0 15px}.nxt-link-btn:last-child{border-radius:0 15px 15px 0;border-right-width:0}@media (min-width:640px){.nxt-link-btn:hover{font-size:1.1rem}}@media (min-width:768px){.nxt-link-btn:hover{font-size:1.2rem}}@media (min-width:1024px){.nxt-link-btn:hover{font-size:1.6rem}}.nxt-link-btn:hover{background:linear-gradient(90deg,#60bee9,transparent) #0ee9c1;color:#4b0670;font-weight:400}.nxt-link-btn:hover,.nxt-link-btn:not(:hover){transition:.2s ease-in-out}.nxt-link-btn.fade{scale:100%}.nav-bar-mobile button:hover{background:linear-gradient(90deg,#60bee9,transparent) #0ee9c1;color:#4b0670;z-index:1000}.mobile-menu-ham{--tw-bg-opacity:1;border-radius:25px;box-shadow:0 0 5px #6e839d;transition:width .4s linear .35s,border-radius .4s linear .35s;width:50px}.mobile-menu-ham,.mobile-menu-ham.show{background-color:#e2e8f0;background-color:rgb(226 232 240/var(--tw-bg-opacity));height:50px;margin-left:calc((min(1200px,100vw) - (min(1200px,100vw)*0.96))/2);margin-left:calc((min(var(--max-width),100vw) - (min(var(--max-width),100vw)*0.96))/2);margin-top:-3em;opacity:1;position:fixed;z-index:1000}.mobile-menu-ham.show{--tw-border-opacity:1;--tw-bg-opacity:1;--tw-text-opacity:1;border-color:#64748b;border-color:rgb(100 116 139/var(--tw-border-opacity));border-radius:15px 15px 0 0;border-top-width:1px;border-width:1px;color:#000;color:rgb(0 0 0/var(--tw-text-opacity));padding:.75rem;transition:width .35s linear 0s,border-width .35s linear 0s;width:125px}.mobile-menu-buttons{border-color:#64748b;border-color:rgb(100 116 139/var(--tw-border-opacity));border-radius:0 0 15px 15px;height:0;margin-left:calc((min(1200px,100vw) - (min(1200px,100vw)*0.96))/2);margin-left:calc((min(var(--max-width),100vw) - (min(var(--max-width),100vw)*0.96))/2);opacity:0;position:fixed;transition:all .4s linear 0s;width:125px;z-index:1000}.mobile-menu-buttons,.mobile-menu-buttons.show{--tw-border-opacity:1;--tw-bg-opacity:1;background-color:#e2e8f0;background-color:rgb(226 232 240/var(--tw-bg-opacity));display:flex;flex-direction:column;margin-top:1px;transform:translateY(0)}.mobile-menu-buttons.show{border-color:#64748b;border-color:rgb(100 116 139/var(--tw-border-opacity));border-width:0 1px 1px;height:295px;opacity:1;transition:all .4s linear .35s}.mobile-button{--tw-border-opacity:1;--tw-bg-opacity:1;--tw-text-opacity:1;background-color:#e2e8f0;background-color:rgb(226 232 240/var(--tw-bg-opacity));border-color:#94a3b8;border-color:rgb(148 163 184/var(--tw-border-opacity));border-top-width:1px;color:#000;color:rgb(0 0 0/var(--tw-text-opacity));cursor:pointer;padding:.75rem;text-align:center}.mobile-button,.mobile-button:hover{z-index:1000}.mobile-button:hover{background:linear-gradient(90deg,#60bee9,transparent) #0ee9c1;color:#4b0670}.mobile-button1{border-width:0;opacity:0;transform:translateY(0);transition:transform .1s linear,opacity .1s linear}.mobile-button2{border-width:0;opacity:0;transform:translateY(-49px);transition:transform .15s linear,opacity .15s linear}.mobile-button3{border-width:0;opacity:0;transform:translateY(-98px);transition:transform .2s linear,opacity .2s linear}.mobile-button4{border-width:0;opacity:0;transform:translateY(-147px);transition:transform .25s linear,opacity .25s linear}.mobile-button5{border-width:0;opacity:0;transform:translateY(-198px);transition:transform .3s linear,opacity .3s linear}.mobile-button6{border-width:0;opacity:0;transform:translateY(-245px);transition:transform .35s linear,opacity .35s linear}.mobile-button1.show{margin-top:0;transition:transform .1s linear .35s}.mobile-button1.show,.mobile-button2.show{border-top-width:1px;opacity:1;transform:translateY(0)}.mobile-button2.show{transition:transform .15s linear .35s}.mobile-button3.show{transition:transform .2s linear .35s}.mobile-button3.show,.mobile-button4.show{border-top-width:1px;opacity:1;transform:translateY(0)}.mobile-button4.show{transition:transform .25s linear .35s}.mobile-button5.show{transition:transform .3s linear .35s}.mobile-button5.show,.mobile-button6.show{border-top-width:1px;opacity:1;transform:translateY(0)}.mobile-button6.show{border-radius:0 0 15px 15px;transition:transform .35s linear .35s,opacity .35s linear .35s}.banner-bg-img{margin-left:auto;margin-right:auto;margin-top:1em;width:100vw}@media (min-width:1024px){.banner-bg-img{width:100%}}.banner-bg-img{background-blend-mode:overlay;background-color:#535353;background-image:url(img/purdue-banner.jpeg);background-position:50% 90%;background-repeat:no-repeat;background-size:cover;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;height:calc(min(557px,max(.4 * 100vh,.5*100vw)))}.banner-font{--tw-text-opacity:1;color:#eab308;color:rgb(234 179 8/var(--tw-text-opacity));font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-size:calc(min(457px,max(.3 * 100vh,.38 * 100vw))*2.4*.05)}.banner-typewriter{animation:typing 2s steps(40),blink-caret 1.5s step-end 8000000 forwards;border-right:6px solid orange;letter-spacing:.1em;margin:0 auto;overflow:hidden;white-space:nowrap}.header-bg-img{background-color:#262f3d;background-repeat:no-repeat;background-size:cover;height:calc(min(100px,max(.4 * 100vh,.5*100vw)));margin-left:auto;margin-right:auto;margin-top:1em;width:100%;z-index:100}.seal-img{height:80px;margin-left:auto;margin-right:4%;margin-top:-2rem;margin-top:calc((min(100px,max(.4 * 100vh,.5*100vw)))*-1*.9);width:80px}.header-img-font{color:#d5e9ed;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-size:calc(min(max(.4 * 100vh,.3 * 100vw))*2*.05);font-weight:300}.main-page-projects-container{display:flex;flex-direction:row;flex-wrap:wrap;width:100%}.main-page-project-div{--tw-bg-opacity:1;background-color:#f1f5f9;background-color:rgb(241 245 249/var(--tw-bg-opacity));border-radius:.125rem;box-shadow:1px 1px 4px gray;flex:1 0 45%;height:auto;margin:1.5rem;opacity:0;scale:95%;transform:translateY(100px)}.main-page-project-div.show-up{opacity:1;scale:100%;transform:translateY(0);transition:all 1.5s ease}.news{--tw-bg-opacity:1;background-color:#f1f5f9;background-color:rgb(241 245 249/var(--tw-bg-opacity));border-radius:.125rem;box-shadow:1px 1px 8px rgba(5,20,36,0);box-shadow:1px 1px 4px gray;flex:1 0 45%;font-size:1rem;line-height:1.5rem;margin:1.5rem;opacity:0;scale:95%;transform:translateY(100px)}.news.show-up{opacity:1;scale:100%;transform:translateY(0);transition:all 1.5s ease}.main-page-video{box-shadow:0 0 5px #512d2d;margin:1.25rem auto 2.5rem;width:99.5%}.video-overlay{align-items:center;display:flex;height:100%;justify-content:center;position:absolute;text-align:center;width:100%}.play_button{-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);background:linear-gradient(hsla(152,5%,49%,.85),hsla(0,0%,40%,.75));border-radius:60px;box-shadow:0 0 2px #433d49;height:120px;width:120px}.play_button:hover{scale:95%;transition:all .3s ease-in-out}.play_button:not(:hover){scale:75%;transition:all .3s ease-in-out}.playshape{background:linear-gradient(#c7e5c7 10%,#b2d4fd 90%);border-radius:10px;-webkit-clip-path:polygon(35% 25%,80% 50%,35% 75%);clip-path:polygon(35% 25%,80% 50%,35% 75%);height:100%;width:100%}.main-page-main-headers{font-size:1.875rem;line-height:2.25rem;text-align:center}.main-page-main-divs,.main-page-main-headers{--tw-text-opacity:1;color:#475569;color:rgb(71 85 105/var(--tw-text-opacity))}.main-page-main-divs{border-radius:.125rem;box-shadow:1px 1px 8px rgba(5,20,36,0);font-size:1rem;line-height:1.5rem;margin:.5rem auto 3.5rem;width:100%}.main-page-project-header{font-weight:700;padding:1rem 1.5rem;text-align:center}.main-page-project-content{padding-bottom:1.5rem;padding-left:1.5rem;padding-right:1.5rem;text-align:justify}.timeline{margin-left:1.5rem;margin-right:1.5rem;position:relative}.timeline:before{--tw-border-opacity:1;border-color:#334155;border-color:rgb(51 65 85/var(--tw-border-opacity));border-left-width:2px;content:"";height:96%;left:2px;position:absolute;top:14px}.entry-container{align-items:center;display:flex;padding-bottom:1rem}.entry{margin-left:0}.date{font-style:italic;font-weight:300}.date:after{content:" — "}.congrat-name:before{content:" Congratulations, "}.congrat-name{--tw-gradient-from:#22d3ee var(--tw-gradient-from-position);--tw-gradient-to:rgba(34,211,238,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to);--tw-gradient-to:#a78bfa var(--tw-gradient-to-position);-webkit-background-clip:text;background-clip:text;background-image:linear-gradient(to right,#22d3ee var(--tw-gradient-from-position),#a78bfa var(--tw-gradient-to-position));background-image:linear-gradient(to right,var(--tw-gradient-stops));color:transparent;font-weight:600}.congrat-icon:after{content:"🥳🎉"}.square{background:#2fd5ef;content:"";height:12px;left:-3px;position:absolute;width:12px}.publication-project-container{opacity:0;scale:95%;transform:translateY(100px)}.publication-project-container.show-up{opacity:1;scale:100%;transform:translateY(0);transition:all 1.5s ease}.publication-main-headers{--tw-text-opacity:1;color:#475569;color:rgb(71 85 105/var(--tw-text-opacity));font-size:1.25rem;line-height:1.75rem;margin-bottom:1rem;margin-left:.5rem;margin-top:2.5rem;text-align:left}@media (min-width:768px){.publication-main-headers{font-size:1.5rem;line-height:2rem}}.publication-div{--tw-bg-opacity:1;background-color:#f1f5f9;background-color:rgb(241 245 249/var(--tw-bg-opacity));border-radius:.125rem;box-shadow:1px 1px 8px rgba(5,20,36,0);box-shadow:1px 1px 4px gray;font-size:1rem;line-height:1.5rem;margin-top:.5rem;padding-bottom:.5rem;padding-left:.5rem;padding-top:1.25rem}
+
+.team-group-container{margin-left:.5rem;margin-right:auto;width:96%}
+@media (min-width:640px){.team-group-container{padding-top:0}}
+.team-group-container{opacity:0;scale:95%;transform:translateY(100px)}
+.team-group-container.show-up{opacity:1;scale:100%;transform:translateY(0);transition:all 1.5s ease}.team-group-header{--tw-text-opacity:1;color:#475569;color:rgb(71 85 105/var(--tw-text-opacity));font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-size:1.875rem;font-weight:100;letter-spacing:-.05em;line-height:2.25rem;margin-bottom:1rem;margin-top:2.5rem;text-align:center}@media (min-width:768px){.team-group-header{font-size:2.25rem;line-height:2.5rem}}
+.team-members-container{-moz-column-gap:10%;column-gap:10%;display:flex;flex-direction:row;flex-wrap:wrap;justify-content:start;align-items:center}
+.team-members-container-1{-moz-column-gap:10%;column-gap:10%;display:flex;flex-direction:row;flex-wrap:wrap;justify-content:space-evenly;}
+
+.alumni-members-container{--tw-bg-opacity:1;background-color:#f1f5f9;background-color:rgb(241 245 249/var(--tw-bg-opacity));border-radius:.125rem;box-shadow:1px 1px 8px rgba(5,20,36,0);box-shadow:1px 1px 4px gray;font-size:1rem;line-height:1.5rem;margin-top:.5rem;padding-bottom:.5rem;padding-left:.5rem;padding-top:1.25rem}.team-member-name{font-size:1.5rem;font-weight:600;line-height:2rem;margin-top:.5rem}.team-member-name,.team-member-title{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;letter-spacing:-.05em}.team-member-title{font-size:1.25rem;font-weight:300;line-height:1.75rem}.team-member-img{border-radius:0%;max-height:37px;width:auto}.team-member-img-1{border-radius:0%;max-height:80px;width:auto}.team-member-img-2{border-radius:0%;max-height:70px;width:auto}.team-member-img-3{border-radius:10%;max-height:200px;width:auto}
+
+.projects-container{display:flex;flex-direction:row;flex-wrap:wrap;justify-content:center;width:100%}.project-container-div{--tw-bg-opacity:1;background-color:#f1f5f9;background-color:rgb(241 245 249/var(--tw-bg-opacity));border-radius:.125rem;box-shadow:1px 1px 4px gray;flex:1 0 45%;margin:1.5rem;opacity:0;padding-bottom:2rem;scale:95%;transform:translateY(100px)}.project-container-div.show-up{opacity:1;scale:100%;transform:translateY(0);transition:all 1.5s ease}.project-content{border-radius:.125rem;padding:.5rem 1.5rem;text-align:justify}@media (min-width:768px){.project-content{--tw-bg-opacity:1;background-color:#e2e8f0;background-color:rgb(226 232 240/var(--tw-bg-opacity));max-height:13.5em}}.project-content{line-height:1.5em;overflow:scroll}.more{bottom:0;cursor:pointer;float:right;font-style:italic;font-weight:300;margin-bottom:2px;position:absolute;right:10px;text-align:right;transition:all .5s ease-in-out;width:100px}.more:hover{--tw-text-opacity:1;color:#3730a3;color:rgb(55 48 163/var(--tw-text-opacity));font-weight:800}.loadMore{cursor:pointer;font-style:italic;font-weight:300;text-align:center;transition:all .5s ease-in-out}.loadMore:hover{--tw-text-opacity:1;color:#3730a3;color:rgb(55 48 163/var(--tw-text-opacity));font-weight:800}.bounce{animation:bounceAnime 1s linear infinite}.opensource-section-container{display:flex;flex-wrap:wrap;justify-content:center;padding-left:4%;padding-right:4%;width:100%}.opensource-section-container-div{--tw-bg-opacity:1;background-color:#f1f5f9;background-color:rgb(241 245 249/var(--tw-bg-opacity));border-radius:.125rem;flex:0 1 90%;margin:1.5rem}@media (min-width:640px){.opensource-section-container-div{flex:1 0 40%}}@media (min-width:1024px){.opensource-section-container-div{flex:1 0 26%}}.opensource-section-container-div{box-shadow:1px 1px 4px gray;opacity:0;scale:95%;transform:translateY(100px)}.opensource-section-container-div.show-up{opacity:1;scale:100%;transform:translateY(0);transition:all 1.5s ease}.subpages-title{--tw-text-opacity:1;color:#475569;color:rgb(71 85 105/var(--tw-text-opacity));font-size:1.875rem;font-weight:600;line-height:2.25rem;padding-bottom:1.5rem;padding-top:2.5rem;text-align:center}@media (min-width:768px){.subpages-title{padding-top:5rem}}.subpages-section-container-div{--tw-bg-opacity:1;background-color:#f1f5f9;background-color:rgb(241 245 249/var(--tw-bg-opacity));border-radius:.125rem;box-shadow:1px 1px 4px gray;flex:1 0 44%;margin:1.5rem;opacity:0;scale:95%;scroll-margin-top:180px;transform:translateY(100px)}.subpages-section-container-div.show-up{opacity:1;scale:100%;transform:translateY(0);transition:all 1.5s ease}.subpages-section-title-container-div{font-size:2.25rem;line-height:2.5rem;padding-left:3rem;padding-right:3rem;padding-top:2rem}.subpages-section-title{--tw-border-opacity:1;border-bottom-width:2px;border-color:#cbd5e1;border-color:rgb(203 213 225/var(--tw-border-opacity));padding-bottom:.5rem;text-align:center}@media (min-width:768px){.subpages-section-title{text-align:left}}.subpages-section-content{padding:2rem 3rem 1.5rem;text-align:justify}.code-block{--tw-bg-opacity:1;background-color:#e2e8f0;background-color:rgb(226 232 240/var(--tw-bg-opacity));border-radius:.375rem;padding-left:1.25rem}pre{word-wrap:break-word;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap}code,pre{white-space:pre-line}.mark-section{--tw-text-opacity:1;color:#1d4ed8;color:rgb(29 78 216/var(--tw-text-opacity));transition:all .7s ease-out}.marker{--tw-bg-opacity:1;background-color:#94a3b8;background-color:rgb(148 163 184/var(--tw-bg-opacity));height:100%;opacity:0;position:absolute;width:0}.invisible{visibility:hidden}.fixed{position:fixed}.relative{position:relative}.sticky{position:sticky}.top-0{top:0}.z-10{z-index:10}.z-20{z-index:20}.float-right{float:right}.m-6{margin:1.5rem}.mx-auto{margin-left:auto;margin-right:auto}.mb-3{margin-bottom:.75rem}.ml-2{margin-left:.5rem}.mt-10{margin-top:2.5rem}.mt-\[-3\.9rem\]{margin-top:-3.9rem}.block{display:block}.inline-block{display:inline-block}.inline{display:inline}.flex{display:flex}.table{display:table}.hidden{display:none}.h-16{height:4rem}.h-\[0\]{height:0}.min-h-screen{min-height:100vh}.w-\[20\%\]{width:20%}.w-\[96\%\]{width:96%}.flex-\[1_0_25\%\]{flex:1 0 25%}.flex-grow{flex-grow:1}.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.resize{resize:both}.flex-col{flex-direction:column}.items-center{align-items:center}.justify-center{justify-content:center}.justify-evenly{justify-content:space-evenly}.gap-10{gap:2.5rem}.border-t-\[1\.5px\]{border-top-width:1.5px}.border-red-500{--tw-border-opacity:1;border-color:#ef4444;border-color:rgb(239 68 68/var(--tw-border-opacity))}.border-slate-300{--tw-border-opacity:1;border-color:#cbd5e1;border-color:rgb(203 213 225/var(--tw-border-opacity))}.bg-\[var\(--primary-color\)\]{background-color:#ededed;background-color:var(--primary-color)}.px-12{padding-left:3rem;padding-right:3rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-\[30px\]{padding-left:30px;padding-right:30px}.py-4{padding-bottom:1rem;padding-top:1rem}.pb-12{padding-bottom:3rem}.pb-2{padding-bottom:.5rem}.pb-3{padding-bottom:.75rem}.pb-5{padding-bottom:1.25rem}.pb-6{padding-bottom:1.5rem}.pb-\[0\.01rem\]{padding-bottom:.01rem}.pb-\[150px\]{padding-bottom:150px}.pb-\[30px\]{padding-bottom:30px}.pb-\[3px\]{padding-bottom:3px}.pl-1{padding-left:.25rem}.pl-2{padding-left:.5rem}.pl-6{padding-left:1.5rem}.pt-1{padding-top:.25rem}.pt-10{padding-top:2.5rem}.pt-6{padding-top:1.5rem}.pt-8{padding-top:2rem}.text-center{text-align:center}.text-justify{text-align:justify}.font-mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem}.text-lg,.text-xl{line-height:1.75rem}.text-xl{font-size:1.25rem}.font-bold{font-weight:700}.font-extralight{font-weight:200}.font-light{font-weight:300}.font-semibold{font-weight:600}.capitalize{text-transform:capitalize}.italic{font-style:italic}.tracking-tight{letter-spacing:-.025em}.tracking-tighter{letter-spacing:-.05em}.text-sky-900{--tw-text-opacity:1;color:#0c4a6e;color:rgb(12 74 110/var(--tw-text-opacity))}.text-slate-600{--tw-text-opacity:1;color:#475569;color:rgb(71 85 105/var(--tw-text-opacity))}.opacity-0{opacity:0}.transition{transition-duration:.15s;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,-webkit-backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-backdrop-filter;transition-timing-function:cubic-bezier(.4,0,.2,1)}.ease-out{transition-timing-function:cubic-bezier(0,0,.2,1)}@keyframes bounceAnime{25%{transform:translateY(2px)}50%{transform:translateY(0)}75%{transform:translateY(-2px)}}@keyframes typing{0%{width:0}to{border-color:transparent;width:100%}}@keyframes blink-caret{0%,to{border-color:transparent}50%{border-color:orange}}@keyframes gradient{0%{background-position:0 50%}50%{background-position:100% 50%}to{background-position:0 50%}}:root{--primary-color:#ededed;--secondary-color:#1e293b}@media (min-width:640px){.sm\:nav-bar{--tw-border-opacity:1;--tw-bg-opacity:1;background-color:#e2e8f0;background-color:rgb(226 232 240/var(--tw-bg-opacity));border-color:#64748b;border-color:rgb(100 116 139/var(--tw-border-opacity));border-radius:15px 15px 15px 15px;border-width:1px;box-shadow:1px 0 10px #7b848e;display:grid;grid-template-columns:7% 15.5%15.5% 15.5% 15.5% 15.5% 15.5%;height:2rem;margin-left:calc((min(1200px,100vw) - (min(1200px,100vw)*0.96))/2);margin-left:calc((min(var(--max-width),100vw) - (min(var(--max-width),100vw)*0.96))/2);margin-top:1.5em;opacity:0;position:fixed;transform:translateX(-101%);transition:all 1s ease-in-out;width:calc(min(1200px,100vw)*.96);width:calc(min(var(--max-width),100vw)*.96);z-index:20}.sm\:nav-bar,.sm\:nav-bar.show{max-width:1200px;max-width:var(--max-width)}.sm\:nav-bar.show{height:3.5rem;margin-top:.6em;opacity:1;transform:translateX(0)}.sm\:visible{visibility:visible}.sm\:invisible{visibility:hidden}.sm\:block{display:block}}@media (min-width:768px){.md\:hidden{display:none}.md\:pt-20{padding-top:5rem}.md\:text-lg{font-size:1.125rem;line-height:1.75rem}.md\:font-normal{font-weight:400}.md\:tracking-normal{letter-spacing:0}}@media (min-width:1024px){.lg\:my-10{margin-bottom:2.5rem;margin-top:2.5rem}.lg\:border-r-2{border-right-width:2px}.lg\:px-\[80px\]{padding-left:80px;padding-right:80px}}
+</style>
+
+<style>
+  .dot {
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .bs {
+  text-decoration:underline;
+  text-decoration-thickness: 1.5px;
+  padding-right: 3px;
+  font-weight: 500;
+}
+
+.bs:hover {
+  border-bottom: 0px #8c1515 dotted;
+  text-decoration:underline;
+  text-decoration-thickness: 2px;
+}
+</style>
+
+</head>
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+    <div class="container">
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a  style="font-weight:400;font-size: 18px;padding-right: 30px;" class="navbar-brand page-scroll" href="index.html">Workshop 2025</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav">
+          <li class="hidden">
+              <a class="page-scroll" href="#page-top"></a>
+          </li>
+          <li><a  style="font-weight:400;font-size: 14px;" class="page-scroll" href="#intro">Home</a></li>
+          <li><a  style="font-weight:400;font-size: 14px;" class="page-scroll" href="#overview">Overview</a></li>
+          <li><a  style="font-weight:400;font-size: 14px;" class="page-scroll" href="#organizers">Organizers</a></li>
+          <li><a  style="font-weight:400;font-size: 14px;" class="page-scroll" href="#attendees">Attendees</a></li>
+          <li><a  style="font-weight:400;font-size: 14px;" class="page-scroll" href="#schedule">Program</a></li>
+        </ul>
+
+        <!--<ul class="nav navbar-nav navbar-right">
+          <li style="padding-right:6px;padding-left:15px;margin-top:13px;"><img src="img/purdue-logo.svg.png" height="25"></li>
+          <li><a style="font-weight:400;padding-right:0px;" class="navbar-brand page-scroll" href="https://www.purdue.edu/" target="_blank">Purdue University</a></li>
+        </ul>-->
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+  </nav>
+
+
+
+<!-- alternatingly label section with "even" or "odd" -->
+
+<section id="intro" class="even-section">
+  <div class="container" style="padding-right:15px;padding-left:15px;">
+          <p style="font-size:32px;margin-top:0px;padding-bottom: 20px;font-weight: 700;text-shadow: 2px 2px #dedede;"><font style="border-bottom: 0px dashed;">Welcome to the <font style="color:#DE3163; border-bottom: 1px dashed;">Workshop&nbsp;on Reconfigurable Networks</font></font></p>
+
+
+          <p style="padding: 27.5px 0 40px 0"><img style="display:block;margin-left:auto;margin-right:auto;max-width: 100%; height: auto;" src="img/logo-1.png" width="450"></p>
+
+          
+
+          <div class="bs-callout">
+              <table style="margin-top:-3px;">
+                <tbody>
+          
+                 <tr valign=top>
+                    <td style="border-bottom:0px solid #e9e9e9; padding-left: 9px; padding-right: 0px;">
+                      <div id="__nuxt"><!--[-->
+                        <div id="doc" class="bg-[var(--primary-color)] bg-img" style="background-color: #fff;">
+                          <div class="team-group-container show-up">
+                            <div class="team-members-container">
+                              <div>
+                                <div class="text-center m-6">
+                                  <img class="team-member-img-1" src="img/nsf.jpeg">
+                                  <p></p>
+                                  <p></p>
+                                </div>
+                              </div>
+
+                              <div>
+                                <div class="text-center m-6">
+                                  <img class="team-member-img-2" src="img/cornell.png">
+                                  <p></p>
+                                  <p></p>
+                                </div>
+                              </div>
+
+                              <div>
+                                <div class="text-center m-6">
+                                  <img class="team-member-img" src="img/purdue.png">
+                                  <p></p>
+                                  <p></p>
+                                </div>
+                              </div>
+                            
+                            </div>
+                          </div>
+                        </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p style="padding-bottom: 52px;"></p>
+
+            <table style="margin-top:10px;">
+            <col width="1%">
+            <col width="90%">
+            <tbody>
+
+             <tr valign=top>
+                <td style="padding:0px 7px 11px 10px;border-bottom:0px solid #e9e9e9;color:#2a2a2a;font-size:20px;font-weight:500;"><i class="fa fa-calendar" aria-hidden="true" style="padding-right: 5px;"></i></td>
+                <td style="padding:0px 0px 11px 0px;border-bottom:0px solid #e9e9e9;text-align:left;font-size:20px;">
+                  <b>Dates:</b> June 2&ndash;4, 2025 (Mon&ndash;Wed); <a class="bs" href="https://maps.app.goo.gl/d3L4W4gJPwkN44tR6" target="_blank">226 Weill Hall</a>
+                </td>
+              </tr>
+
+              <tr valign=top>
+                <td style="padding:0px 7px 11px 10px;border-bottom:0px solid #e9e9e9;color:#2a2a2a;font-size:20px;font-weight:500;"><i class="fa fa-glass" aria-hidden="true" style="padding-right: 5px;"></i></td>
+                <td style="padding:0px 0px 11px 0px;border-bottom:0px solid #e9e9e9;text-align:left;font-size:20px;">
+                  <b>Reception:</b> June 1, 2025 (Sun) at 6:30pm; <a class="bs" href="https://maps.app.goo.gl/7kc6FMuXNrTBvihg7" target="_blank">Hilton Garden Inn Ithaca</a>
+                </td>
+              </tr>
+
+              <tr valign=top>
+                <td style="padding:0px 7px 15px 10px;border-bottom:0px solid #e9e9e9;color:#2a2a2a;font-size:20px;font-weight:500;"><i class="fa fa-map-marker" aria-hidden="true" style="font-size: 24px;padding-right: 4px;"></i></td>
+                <td style="padding:0px 0px 15px 0px;border-bottom:0px solid #e9e9e9;text-align:left;font-size:20px;">
+                  <b>Location:</b> Ithaca, New York, USA
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+
+        <!--</div>               
+      </div>
+    </div>-->
+  </div>
+</section>
+
+<section id="overview" class="odd-section">
+  <div class="container">
+    <div class="row">
+        <div class="page-header">
+          <h1 style="font-weight:400;font-size: 38px;padding-top: 20px;padding-bottom: 11px;">Overview</h1>
+        </div>
+          <div class="row">
+            <div class="col-md-12">
+
+              <p style="font-size: 17px;">
+                With the boom in AI/ML, both the model sizes and the amounts of data that need to be fed to these models are increasing exponentially. For instance, early Large Language Models (LLMs) such as GPT&ndash;2 (released in 2019) had 1.5 billion parameters whereas more recent GPT&ndash;4 (released in 2023) has close to 1.8 trillion parameters &mdash; a 1000x increase in less than 4 years! This exponential growth has prompted massively large-scale distributed computations inside datacenters, to accomplish tasks such as LLM training, thus demanding extremely high bandwidth networks to ensure no communication bottlenecks. Unfortunately, with the slowdown in transistor scaling, traditional silicon-based packet-switched datacenter networks are finding it extremely challenging to keep up with the growing bandwidth demands. Reconfigurable networks, powered by optical circuit switch technology, promise unlimited bandwidth to meet the demands of both present and future AI/ML workloads. As a result, there has been growing interest, both in academia and industry (e.g., Google), to study and deploy reconfigurable networks in datacenters.
+              </p>
+
+              <p style="font-size: 17px;padding-top:15px;">
+                The goal of the workshop is to bring together leading researchers and practitioners from around the globe to discuss the state of reconfigurable networking &mdash; covering architecture, algorithms, protocols, software systems, and hardware to enable reconfigurable networking in datacenters &mdash; and lay out a vision for future research directions in this field.
+              </p>
+
+              <p style="font-size: 17px;padding-top:20px;font-weight:700;">
+                <i>The workshop is generously funded by the National Science Foundation, Awards <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2402851" target="_blank" style="font-weight:700;">#2402851</a> and <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2402852" target="_blank" style="font-weight:700;">#2402852</a></i>.
+              </p>
+              <p style="padding-bottom:25px"></p>      
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+<section id="organizers" class="even-section">
+  <div class="container">
+    <div class="row">
+        <div class="page-header">
+          <h1 style="font-weight:400;font-size: 38px;padding-top: 20px;padding-bottom: 11px;">Organizers</h1>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div id="__nuxt"><!--[-->
+              <div id="doc" class="bg-[var(--primary-color)] bg-img" style="background-color: #fff;">
+                <div class="team-group-container show-up">
+                  <div class="team-members-container-1">
+                    <div>
+                      <div class="text-center m-6">
+                        <img class="team-member-img-3" src="img/hakim.jpg">
+                        <p style="font-size:17px;padding-top: 10px;"><a href="https://www.cs.cornell.edu/~hweather/" target="_blank">Hakim Weatherspoon</a></p>
+                        <p style="font-size:17px;">Cornell University</p>
+                      </div>
+                    </div>
+
+                    <div>
+                      <div class="text-center m-6">
+                        <img class="team-member-img-3" src="img/bobby.jpg">
+                        <p style="font-size:17px;padding-top: 10px;"><a href="https://www.cs.cornell.edu/~rdk/" target="_blank">Robert Kleinberg</a></p>
+                        <p style="font-size:17px;">Cornell University</p>
+                      </div>
+                    </div>
+
+                    <div>
+                      <div class="text-center m-6">
+                        <img class="team-member-img-3" src="img/vishal.png">
+                        <p style="font-size:17px;padding-top: 10px;"><a href="https://engineering.purdue.edu/~vshriva/" target="_blank">Vishal Shrivastav</a></p>
+                        <p style="font-size:17px;">Purdue University</p>
+                      </div>
+                    </div>
+                  
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <p style="padding: 25px 0 5px 0;">
+              <b style="font-size: 22px;">Hotel Logistics</b>
+            </p>
+            <p style="font-size: 17px;">
+              A block of rooms have been reserved at the <a href="https://www.hilton.com/en/hotels/ithiggi-hilton-garden-inn-ithaca/" target="_blank">Hilton Garden Inn Ithaca</a> for all attendees for three nights, June 1&ndash;3. The workshop budget is covering the cost of the hotel rooms, so attendees don't need to reserve a room themselves.
+            </p>
+            <p style="padding-top:10px">
+              <b style="color:#C41E3A;font-size: 18px;border-bottom: 1px dotted;">Hotel checkout</b><b style="color:#C41E3A;font-size: 18px;padding-left: 1px;">:</b> There will be an early checkout on June 4 (Wed) from the hotel. Attendees will checkout from the hotel in the morning of June 4 before traveling to the workshop venue (and carry all their items with them to the workshop venue). After the conclusion of the workshop in the afternoon on June 4, attendees should plan to head out directly from the workshop venue to their respective destinations.
+
+            <p style="padding: 30px 0 5px 0;">
+              <b style="font-size: 22px;">Travel Logistics</b>
+            </p>
+            <p style="font-size: 17px;">
+              <a href="https://flyithaca.com" target="_blank">Ithaca airport</a> (airport code: ITH) has daily flights from John F. Kennedy (JFK) airport in New York City and Dulles airport (IAD) in the Washington, DC area.
+            </p>
+
+            <p style="font-size: 17px;padding-top: 10px;">
+              A greater number of destinations are served by nearby <a href="https://syrairport.org" target="_blank">Syracuse airport</a> (airport code: SYR), about one hour's drive away from the Cornell campus.
+              <table style="margin-bottom:0;">
+            <col width="1%">
+            <col width="90%">
+            <tbody>
+              
+             <tr valign=top>
+                <td style="padding:13px 9px 5px 12px;border-bottom:0px solid #dadada;color:#2a2a2a;font-size:14px">&#9679;</td>
+                <td style="padding:10px 0px 5px 0px;border-bottom:0px solid #dadada;text-align:left;font-size: 17px;">
+                  Car rental is the most reliable option for getting from Syracuse to Ithaca.
+                </td>
+              </tr>
+
+              <tr valign=top>
+                <td style="padding:3px 9px 5px 12px;border-bottom:0px solid #dadada;color:#2a2a2a;font-size:14px">&#9679;</td>
+                <td style="padding:0px 0px 5px 0px;border-bottom:0px solid #dadada;text-align:left;font-size: 17px;">
+                  Ride-shares (Uber, Lyft) are usually available and often cost around $85, but the availability of drivers is variable.
+                </td>
+              </tr>
+
+              <tr valign=top>
+                <td style="padding:3px 9px 0px 12px;border-bottom:0px solid #dadada;color:#2a2a2a;font-size:14px">&#9679;</td>
+                <td style="padding:0px 0px 0px 0px;border-bottom:0px solid #dadada;text-align:left;font-size: 17px;">
+                  <a href="https://www.ithacaairlinelimo.org" target="_blank">Ithaca Airline Limousine</a> operates a shuttle bus from Syracuse to Ithaca eight times a day.
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+            </p>
+
+            <p style="font-size: 17px;padding-top: 15px;">
+              For travelers coming from the New York City area, there are several good bus options.
+              <table style="margin-bottom:0;">
+            <col width="1%">
+            <col width="90%">
+            <tbody>
+              
+             <tr valign=top>
+                <td style="padding:13px 9px 5px 12px;border-bottom:0px solid #dadada;color:#2a2a2a;font-size:14px">&#9679;</td>
+                <td style="padding:10px 0px 5px 0px;border-bottom:0px solid #dadada;text-align:left;font-size: 17px;">
+                  Cornell's <a href="https://fcs.cornell.edu/departments/transportation-delivery-services/campus-campus-bus-service" target="_blank">campus-to-campus bus service</a> offers direct buses from midtown Manhattan (a couple of blocks away from Grand Central Station) to the Cornell campus.
+                </td>
+              </tr>
+
+              <tr valign=top>
+                <td style="padding:3px 9px 5px 12px;border-bottom:0px solid #dadada;color:#2a2a2a;font-size:14px">&#9679;</td>
+                <td style="padding:0px 0px 5px 0px;border-bottom:0px solid #dadada;text-align:left;font-size: 17px;">
+                  <font style="font-weight:600">OurBus</font> departs from Manhattan (often but not always the George Washington Bridge bus station) and delivers passengers directly to the Hilton Garden Inn.
+                </td>
+              </tr>
+
+              <tr valign=top>
+                <td style="padding:3px 9px 5px 12px;border-bottom:0px solid #dadada;color:#2a2a2a;font-size:14px">&#9679;</td>
+                <td style="padding:0px 0px 5px 0px;border-bottom:0px solid #dadada;text-align:left;font-size: 17px;">
+                  <font style="font-weight:600">FlixBus</font> departs from midtown Manhattan (across the street from Penn Station) and delivers passengers to Green Street in downtown Ithaca, about three blocks away from the Hilton Garden Inn.
+                </td>
+              </tr>
+
+              <tr valign=top>
+                <td style="padding:3px 9px 0px 12px;border-bottom:0px solid #dadada;color:#2a2a2a;font-size:14px">&#9679;</td>
+                <td style="padding:0px 0px 0px 0px;border-bottom:0px solid #dadada;text-align:left;font-size: 17px;">
+                  All three bus routes take about four hours, and they offer WiFi to passengers but the route passes through some dead zones where WiFi service is temporarily unavailable.
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+            </p>
+            <p style="padding-bottom:20px"></p>
+          </div>
+        </div>
+      <!--</div>-->
+    </div>
+  </div>
+</section>
+
+<section id="attendees" class="odd-section">
+  <div class="container">
+    <div class="row">
+      <!--<div class="col-lg-10 col-lg-offset-1">-->
+        <div class="page-header">
+          <h1 style="font-weight:400;font-size: 38px;padding-top: 20px;padding-bottom: 11px;">Attendees</h1>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <table style="margin-top:0px;">
+            <col width="1%">
+            <col width="90%">
+            <tbody>
+
+             <tr valign=top>
+                <td style="padding:2px 7px 0px 10px;border-bottom:0px solid #e9e9e9;color:#2a2a2a;font-size:16px;font-weight:500;text-align:right;">1.</td>
+                <td style="padding:1px 0px 0px 2px;border-bottom:0px solid #e9e9e9;text-align:left;font-size:17px;">
+                  Vamsi Addanki, <i>Technical University Berlin</i>
+                </td>
+              </tr>
+
+              <tr valign=top>
+                <td style="padding:2px 7px 0px 10px;border-bottom:0px solid #e9e9e9;color:#2a2a2a;font-size:16px;font-weight:500;text-align:right;">2.</td>
+                <td style="padding:1px 0px 0px 2px;border-bottom:0px solid #e9e9e9;text-align:left;font-size:17px;">
+                  Daniel Amir, <i>Technion</i>
+                </td>
+              </tr>
+
+              <tr valign=top>
+                <td style="padding:2px 7px 0px 10px;border-bottom:0px solid #e9e9e9;color:#2a2a2a;font-size:16px;font-weight:500;text-align:right;">3.</td>
+                <td style="padding:1px 0px 0px 2px;border-bottom:0px solid #e9e9e9;text-align:left;font-size:17px;">
+                  Keting Chen, <i>Cornell University</i>
+                </td>
+              </tr>
+              <tr valign=top>
+                <td style="padding:2px 7px 0px 10px;border-bottom:0px solid #e9e9e9;color:#2a2a2a;font-size:16px;font-weight:500;text-align:right;">4.</td>
+                <td style="padding:1px 0px 0px 2px;border-bottom:0px solid #e9e9e9;text-align:left;font-size:17px;">
+                  Shawn Chen, <i>Carnegie Mellon University</i>
+                </td>
+              </tr>
+
+              <tr valign=top>
+                <td style="padding:2px 7px 0px 10px;border-bottom:0px solid #e9e9e9;color:#2a2a2a;font-size:16px;font-weight:500;text-align:right;">5.</td>
+                <td style="padding:1px 0px 0px 2px;border-bottom:0px solid #e9e9e9;text-align:left;font-size:17px;">
+                  Federico De Marchi, <i>Max Planck Institute for Informatics</i>
+                </td>
+              </tr>
+
+              <tr valign=top>
+                <td style="padding:2px 7px 0px 10px;border-bottom:0px solid #e9e9e9;color:#2a2a2a;font-size:16px;font-weight:500;text-align:right;">6.</td>
+                <td style="padding:1px 0px 0px 2px;border-bottom:0px solid #e9e9e9;text-align:left;font-size:17px;">
+                  Arjun Devraj, <i>Cornell University</i>
+                </td>
+              </tr>
+              <tr valign=top>
+                <td style="padding:2px 7px 0px 10px;border-bottom:0px solid #e9e9e9;color:#2a2a2a;font-size:16px;font-weight:500;text-align:right;">7.</td>
+                <td style="padding:1px 0px 0px 2px;border-bottom:0px solid #e9e9e9;text-align:left;font-size:17px;">
+                  Eric Ding, <i>Cornell University</i>
+                </td>
+              </tr>
+
+              <tr valign=top>
+                <td style="padding:2px 7px 0px 10px;border-bottom:0px solid #e9e9e9;color:#2a2a2a;font-size:16px;font-weight:500;text-align:right;">8.</td>
+                <td style="padding:1px 0px 0px 2px;border-bottom:0px solid #e9e9e9;text-align:left;font-size:17px;">
+                  Michael Dinitz, <i>Johns Hopkins University</i>
+                </td>
+              </tr>
+
+              <tr valign=top>
+                <td style="padding:2px 7px 0px 10px;border-bottom:0px solid #e9e9e9;color:#2a2a2a;font-size:16px;font-weight:500;text-align:right;">9.</td>
+                <td style="padding:1px 0px 0px 2px;border-bottom:0px solid #e9e9e9;text-align:left;font-size:17px;">
+                  Miguel Ferreira, <i>Carnegie Mellon University</i>
+                </td>
+              </tr>
+
+              <tr valign=top>
+                <td style="padding:2px 7px 0px 10px;border-bottom:0px solid #e9e9e9;color:#2a2a2a;font-size:16px;font-weight:500;text-align:right;">10.</td>
+                <td style="padding:1px 0px 0px 2px;border-bottom:0px solid #e9e9e9;text-align:left;font-size:17px;">
+                  Robert Kleinberg, <i>Cornell University</i>
+                </td>
+              </tr>
+
+              <tr valign=top>
+                <td style="padding:2px 7px 0px 10px;border-bottom:0px solid #e9e9e9;color:#2a2a2a;font-size:16px;font-weight:500;text-align:right;">11.</td>
+                <td style="padding:1px 0px 0px 2px;border-bottom:0px solid #e9e9e9;text-align:left;font-size:17px;">
+                  Abhishek Vijaya Kumar, <i>Cornell University</i>
+                </td>
+              </tr>
+
+              <tr valign=top>
+                <td style="padding:2px 7px 0px 10px;border-bottom:0px solid #e9e9e9;color:#2a2a2a;font-size:16px;font-weight:500;text-align:right;">12.</td>
+                <td style="padding:1px 0px 0px 2px;border-bottom:0px solid #e9e9e9;text-align:left;font-size:17px;">
+                  T. S. Eugene Ng, <i>Rice University</i>
+                </td>
+              </tr>
+
+              <tr valign=top>
+                <td style="padding:2px 7px 0px 10px;border-bottom:0px solid #e9e9e9;color:#2a2a2a;font-size:16px;font-weight:500;text-align:right;">13.</td>
+                <td style="padding:1px 0px 0px 2px;border-bottom:0px solid #e9e9e9;text-align:left;font-size:17px;">
+                  Rajmohan Rajaraman, <i>Northeastern University</i>
+                </td>
+              </tr>
+
+              <tr valign=top>
+                <td style="padding:2px 7px 0px 10px;border-bottom:0px solid #e9e9e9;color:#2a2a2a;font-size:16px;font-weight:500;text-align:right;">14.</td>
+                <td style="padding:1px 0px 0px 2px;border-bottom:0px solid #e9e9e9;text-align:left;font-size:17px;">
+                  Nitika Saran, <i>Cornell University</i>
+                </td>
+              </tr>
+
+              <tr valign=top>
+                <td style="padding:2px 7px 0px 10px;border-bottom:0px solid #e9e9e9;color:#2a2a2a;font-size:16px;font-weight:500;text-align:right;">15.</td>
+                <td style="padding:1px 0px 0px 2px;border-bottom:0px solid #e9e9e9;text-align:left;font-size:17px;">
+                  Yunxi Shen, <i>Cornell University</i>
+                </td>
+              </tr>
+
+              <tr valign=top>
+                <td style="padding:2px 7px 0px 10px;border-bottom:0px solid #e9e9e9;color:#2a2a2a;font-size:16px;font-weight:500;text-align:right;">16.</td>
+                <td style="padding:1px 0px 0px 2px;border-bottom:0px solid #e9e9e9;text-align:left;font-size:17px;">
+                  Vishal Shrivastav, <i>Purdue University</i>
+                </td>
+              </tr>
+
+              <tr valign=top>
+                <td style="padding:2px 7px 0px 10px;border-bottom:0px solid #e9e9e9;color:#2a2a2a;font-size:16px;font-weight:500;text-align:right;">17.</td>
+                <td style="padding:1px 0px 0px 2px;border-bottom:0px solid #e9e9e9;text-align:left;font-size:17px;">
+                  Mark Silberstein, <i>Technion</i>
+                </td>
+              </tr>
+              <tr valign=top>
+                <td style="padding:2px 7px 0px 10px;border-bottom:0px solid #e9e9e9;color:#2a2a2a;font-size:16px;font-weight:500;text-align:right;">18.</td>
+                <td style="padding:1px 0px 0px 2px;border-bottom:0px solid #e9e9e9;text-align:left;font-size:17px;">
+                  Rachee Singh, <i>Cornell University</i>
+                </td>
+              </tr>
+
+              <tr valign=top>
+                <td style="padding:2px 7px 0px 10px;border-bottom:0px solid #e9e9e9;color:#2a2a2a;font-size:16px;font-weight:500;text-align:right;">19.</td>
+                <td style="padding:1px 0px 0px 2px;border-bottom:0px solid #e9e9e9;text-align:left;font-size:17px;">
+                  Alex Snoeren, <i>University of California, San Diego</i>
+                </td>
+              </tr>
+
+              <tr valign=top>
+                <td style="padding:2px 7px 0px 10px;border-bottom:0px solid #e9e9e9;color:#2a2a2a;font-size:16px;font-weight:500;text-align:right;">20.</td>
+                <td style="padding:1px 0px 0px 2px;border-bottom:0px solid #e9e9e9;text-align:left;font-size:17px;">
+                  Frank Wang, <i>Massachusetts Institute of Technology</i>
+                </td>
+              </tr>
+
+              <tr valign=top>
+                <td style="padding:2px 7px 0px 10px;border-bottom:0px solid #e9e9e9;color:#2a2a2a;font-size:16px;font-weight:500;text-align:right;">21.</td>
+                <td style="padding:1px 0px 0px 2px;border-bottom:0px solid #e9e9e9;text-align:left;font-size:17px;">
+                  Omer Wasim, <i>Northeastern University</i>
+                </td>
+              </tr>
+
+              <tr valign=top>
+                <td style="padding:2px 7px 0px 10px;border-bottom:0px solid #e9e9e9;color:#2a2a2a;font-size:16px;font-weight:500;text-align:right;">22.</td>
+                <td style="padding:1px 0px 0px 2px;border-bottom:0px solid #e9e9e9;text-align:left;font-size:17px;">
+                  Hakim Weatherspoon, <i>Cornell University</i>
+                </td>
+              </tr>
+
+              <tr valign=top>
+                <td style="padding:2px 7px 0px 10px;border-bottom:0px solid #e9e9e9;color:#2a2a2a;font-size:16px;font-weight:500;text-align:right;">23.</td>
+                <td style="padding:1px 0px 0px 2px;border-bottom:0px solid #e9e9e9;text-align:left;font-size:17px;">
+                  Tegan Wilson, <i>Northeastern University</i>
+                </td>
+              </tr>
+
+              <tr valign=top>
+                <td style="padding:2px 7px 0px 10px;border-bottom:0px solid #e9e9e9;color:#2a2a2a;font-size:16px;font-weight:500;text-align:right;">24.</td>
+                <td style="padding:1px 0px 0px 2px;border-bottom:0px solid #e9e9e9;text-align:left;font-size:17px;">
+                  Yiting Xia, <i>Max Planck Institute for Informatics</i>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+          <p style="padding-bottom:19px"></p>
+          </div>
+        </div>
+      <!--</div>-->
+    </div>
+  </div>
+</section>
+
+<section id="schedule" class="even-section">
+  <div class="container">
+    <div class="row">
+      <!--<div class="col-lg-10 col-lg-offset-1">-->
+        <div class="page-header">
+          <h1 style="font-weight:400;font-size:38px;padding-top: 20px;padding-bottom: 11px;">Program</h1>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <p style="font-size: 19px;padding-bottom: 30px;">
+              <i>The venue for the workshop is <b>226 Weill Hall,</b> 237 Tower Rd, Ithaca, NY.</i> <font style="padding-right:2px">[</font><a href="https://maps.app.goo.gl/d3L4W4gJPwkN44tR6" target="_blank">google&nbsp;map</a><font style="padding-left:1px">]</font>
+            </p>
+
+            <table>
+              <col width="30%">
+              <col width="70%">
+              <tbody>
+              <tr>
+                <td style="padding-left:15px;background-color:#C41E3A;padding-right:0px;border-bottom:0px solid #000;font-size: 20px;font-weight: 400;color: #fff;padding-top: 25px;padding-top: 10px; padding-bottom: 10px">Sunday, June&nbsp;1</td>
+                <td style="border-bottom:0px solid #000;background-color:#C41E3A;"></td>
+              </tr>
+              <tr>
+                <td style="border-bottom:0px solid #000;"></td>
+                <td style="border-bottom:0px solid #000;"></td>
+              </tr>
+              <tr>
+              <tr>
+                <td style="padding-left:15px;padding-right:20px;border-bottom:1px solid #000;"><b style="font-size:19px;">Time</b></td>
+                <td style="border-bottom:1px solid #000;"><b style="font-size:19px;">Agenda</b></td>
+              </tr>
+
+              <tr>
+                <td style="border-bottom:0px dashed #fff;padding-right:20px;"></td>
+                <td style="border-bottom:0px dashed #fff;"></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;font-size: 17px;">6:30pm&ndash;8:00pm</td>
+                <td style="border-bottom:0px;font-size: 17px">Reception Dinner at <a href="https://www.hilton.com/en/hotels/ithiggi-hilton-garden-inn-ithaca/" target="_blank">Hilton Garden Inn Ithaca</a> <!--<font style="padding-right:2px">[</font><a href="https://maps.app.goo.gl/7kc6FMuXNrTBvihg7" target="_blank">google&nbsp;map</a><font style="padding-left:1px">]</font>--></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;"></td>
+                <td style="border-bottom:0px;"></td>
+              </tr>
+              <tr>
+                <td style="border-bottom:0px dashed #000;padding-right:20px;"></td>
+                <td style="border-bottom:0px dashed #000;"></td>
+              </tr>
+
+
+
+              <tr>
+                <td style="padding-left:15px;background-color:#C41E3A;padding-right:0px;border-bottom:0px solid #000;font-size: 20px;font-weight: 400;color: #fff;padding-top: 25px;padding-bottom: 10px;padding-top: 10px; padding-bottom: 10px">Monday, June&nbsp;2</td>
+                <td style="border-bottom:0px solid #000;background-color:#C41E3A;"></td>
+              </tr>
+  
+              <tr>
+                <td style="border-bottom:0px solid #000;"></td>
+                <td style="border-bottom:0px solid #000;"></td>
+              </tr>
+              <tr>
+              <tr>
+                <td style="padding-left:15px;padding-right:20px;border-bottom:1px solid #000;"><b style="font-size:19px;">Time</b></td>
+                <td style="border-bottom:1px solid #000;"><b style="font-size:19px;">Agenda</b></td>
+              </tr>
+
+
+
+              <tr>
+                <td style="border-bottom:0px dashed #fff;padding-right:20px;"></td>
+                <td style="border-bottom:0px dashed #fff;"></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;font-size: 17px;">8:00am&ndash;9:00am</td>
+                <td style="border-bottom:0px;font-size: 17px">Breakfast</td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;"></td>
+                <td style="border-bottom:0px;"></td>
+              </tr>
+              <tr>
+                <td style="border-bottom:1px dashed #000;padding-right:20px;"></td>
+                <td style="border-bottom:1px dashed #000;"></td>
+              </tr>
+
+
+
+              <tr>
+                <td style="border-bottom:0px dashed #fff;padding-right:20px;"></td>
+                <td style="border-bottom:0px dashed #fff;"></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;font-size: 17px;">9:00am&ndash;10:30am</td>
+                <td style="border-bottom:0px;font-size: 17px;">Welcome and Opening Remarks</td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;"></td>
+                <td style="border-bottom:0px;"></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;font-size: 17px;"></td>
+                <td style="border-bottom:0px;font-size: 18px;background-color:#36454F;padding-left: 10px;color:white">Session 1: Network Architecture</td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;"></td>
+                <td style="border-bottom:0px;"></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;font-size: 17px;"></td>
+                <td style="border-bottom:0px;font-size: 17px"><b>Talk # 1:</b> Realizing RotorNet. <br><font style="border-bottom: 1px dotted;"><font style="border-bottom: 1px dotted;">Speaker</font></font>: <i>Alex Snoeren (University of California, San Diego)</i></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;"></td>
+                <td style="border-bottom:0px;"></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;font-size: 17px;"></td>
+                <td style="border-bottom:0px;font-size: 17px"><b>Talk # 2:</b> Semi-Oblivious Reconfigurable Datacenter Networks. <br><font style="border-bottom: 1px dotted;">Speaker</font>: <i>Nitika Saran (Cornell University)</i></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;"></td>
+                <td style="border-bottom:0px;"></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;font-size: 17px;"></td>
+                <td style="border-bottom:0px;font-size: 17px"><b>Discussion / Panel</b></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;"></td>
+                <td style="border-bottom:0px;"></td>
+              </tr>
+              <tr>
+                <td style="border-bottom:1px dashed #000;padding-right:20px;"></td>
+                <td style="border-bottom:1px dashed #000;"></td>
+              </tr>
+
+
+
+              <tr>
+                <td style="border-bottom:0px dashed #fff;padding-right:20px;"></td>
+                <td style="border-bottom:0px dashed #fff;"></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;font-size: 17px;">10:30am&ndash;11:00am</td>
+                <td style="border-bottom:0px;font-size: 17px">Break</td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;"></td>
+                <td style="border-bottom:0px;"></td>
+              </tr>
+              <tr>
+                <td style="border-bottom:1px dashed #000;padding-right:20px;"></td>
+                <td style="border-bottom:1px dashed #000;"></td>
+              </tr>
+
+
+
+              <tr>
+                <td style="border-bottom:0px dashed #fff;padding-right:20px;"></td>
+                <td style="border-bottom:0px dashed #fff;"></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;font-size: 17px;">11:00am&ndash;12:30pm</td>
+                <td style="border-bottom:0px;font-size: 18px;background-color:#36454F;padding-left: 10px;color:white">Session 2: Transport</td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;"></td>
+                <td style="border-bottom:0px;"></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;font-size: 17px;"></td>
+                <td style="border-bottom:0px;font-size: 17px"><b>Talk # 3:</b> Reshaping Transport and Traffic Engineering in Reconfigurable Data Center Networks. <br><font style="border-bottom: 1px dotted;">Speaker</font>: <i>Shawn Chen (Carnegie Mellon University)</i></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;"></td>
+                <td style="border-bottom:0px;"></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;font-size: 17px;"></td>
+                <td style="border-bottom:0px;font-size: 17px"><b>Talk # 4:</b> Shale: Towards a Practical, Scalable Oblivious Reconfigurable Network. <br><font style="border-bottom: 1px dotted;">Speaker</font>: <i>Hakim Weatherspoon (Cornell University)</i></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;"></td>
+                <td style="border-bottom:0px;"></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;font-size: 17px;"></td>
+                <td style="border-bottom:0px;font-size: 17px"><b>Talk # 5:</b> Meeting the Promises of Reconfigurable Data Center Networks with Dedicated Transport. <br><font style="border-bottom: 1px dotted;">Speaker</font>: <i>Federico De Marchi (Max Planck Institute for Informatics)</i></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;"></td>
+                <td style="border-bottom:0px;"></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;font-size: 17px;"></td>
+                <td style="border-bottom:0px;font-size: 17px"><b>Discussion / Panel</b></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;"></td>
+                <td style="border-bottom:0px;"></td>
+              </tr>
+              <tr>
+                <td style="border-bottom:1px dashed #000;padding-right:20px;"></td>
+                <td style="border-bottom:1px dashed #000;"></td>
+              </tr>
+
+
+              <tr>
+                <td style="border-bottom:0px dashed #fff;padding-right:20px;"></td>
+                <td style="border-bottom:0px dashed #fff;"></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;font-size: 17px;">12:30pm&ndash;1:30pm</td>
+                <td style="border-bottom:0px;font-size: 17px">Lunch</td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;"></td>
+                <td style="border-bottom:0px;"></td>
+              </tr>
+              <tr>
+                <td style="border-bottom:1px dashed #000;padding-right:20px;"></td>
+                <td style="border-bottom:1px dashed #000;"></td>
+              </tr>
+
+
+              <tr>
+                <td style="border-bottom:0px dashed #fff;padding-right:20px;"></td>
+                <td style="border-bottom:0px dashed #fff;"></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;font-size: 17px;">1:30pm&ndash;2:45pm</td>
+                <td style="border-bottom:0px;font-size: 18px;background-color:#36454F;padding-left: 10px;color:white">Session 3: Data Plane</td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;"></td>
+                <td style="border-bottom:0px;"></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;font-size: 17px;"></td>
+                <td style="border-bottom:0px;font-size: 17px"><b>Talk # 6:</b> Remote Memory ~ Local Memory over Reconfigurable Ethernet Fabric. <br><font style="border-bottom: 1px dotted;">Speaker</font>: <i>Vishal Shrivastav (Purdue University)</i></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;"></td>
+                <td style="border-bottom:0px;"></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;font-size: 17px;"></td>
+                <td style="border-bottom:0px;font-size: 17px"><b>Talk # 7:</b> Packet-level Data-plane Programmability Meets Reconfigurable Networks. <br><font style="border-bottom: 1px dotted;">Speaker</font>: <i>Mark Silberstein (Technion)</i></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;"></td>
+                <td style="border-bottom:0px;"></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;font-size: 17px;"></td>
+                <td style="border-bottom:0px;font-size: 17px"><b>Talk # 8:</b> Morphlux: Programmable Chip-to-Chip Photonic Fabrics for Scale-up Accelerator Networks. <br><font style="border-bottom: 1px dotted;">Speaker</font>: <i>Abhishek Vijaya Kumar (Cornell University)</i></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;"></td>
+                <td style="border-bottom:0px;"></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;font-size: 17px;"></td>
+                <td style="border-bottom:0px;font-size: 17px"><b>Discussion / Panel</b></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;"></td>
+                <td style="border-bottom:0px;"></td>
+              </tr>
+              <tr>
+                <td style="border-bottom:1px dashed #000;padding-right:20px;"></td>
+                <td style="border-bottom:1px dashed #000;"></td>
+              </tr>
+
+
+              <tr>
+                <td style="border-bottom:0px dashed #fff;padding-right:20px;"></td>
+                <td style="border-bottom:0px dashed #fff;"></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;font-size: 17px;">2:45pm&ndash;4:00pm</td>
+                <td style="border-bottom:0px;font-size: 17px">Break / Campus Tour</td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;"></td>
+                <td style="border-bottom:0px;"></td>
+              </tr>
+              <tr>
+                <td style="border-bottom:1px dashed #000;padding-right:20px;"></td>
+                <td style="border-bottom:1px dashed #000;"></td>
+              </tr>
+
+
+              <tr>
+                <td style="border-bottom:0px dashed #fff;padding-right:20px;"></td>
+                <td style="border-bottom:0px dashed #fff;"></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;font-size: 17px;">4:00pm&ndash;5:15pm</td>
+                <td style="border-bottom:0px;font-size: 18px;background-color:#36454F;padding-left: 10px;color:white">Session 4: Control Plane</td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;"></td>
+                <td style="border-bottom:0px;"></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;font-size: 17px;"></td>
+                <td style="border-bottom:0px;font-size: 17px"><b>Talk # 9:</b> Söze: One Network Telemetry Is All You Need for Per-flow Weighted Bandwidth Allocation at Scale. <br><font style="border-bottom: 1px dotted;">Speaker</font>: <i>T. S. Eugene Ng (Rice University)</i></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;"></td>
+                <td style="border-bottom:0px;"></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;font-size: 17px;"></td>
+                <td style="border-bottom:0px;font-size: 17px"><b>Talk # 10:</b> Mitigating effects of wavelength-specific faults in cloud WANs. <br><font style="border-bottom: 1px dotted;">Speaker</font>: <i>Arjun Devraj (Cornell University)</i></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;"></td>
+                <td style="border-bottom:0px;"></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;font-size: 17px;"></td>
+                <td style="border-bottom:0px;font-size: 17px"><b>Talk # 11:</b> Hardware Feasability for Semi-Oblivious Reconfigurable Networks. <br><font style="border-bottom: 1px dotted;">Speaker</font>: <i>Yunxi Shen (Cornell University)</i></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;"></td>
+                <td style="border-bottom:0px;"></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;font-size: 17px;"></td>
+                <td style="border-bottom:0px;font-size: 17px"><b>Discussion / Panel</b></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;"></td>
+                <td style="border-bottom:0px;"></td>
+              </tr>
+              <tr>
+                <td style="border-bottom:1px dashed #000;padding-right:20px;"></td>
+                <td style="border-bottom:1px dashed #000;"></td>
+              </tr>
+
+              <tr>
+                <td style="border-bottom:0px dashed #fff;padding-right:20px;"></td>
+                <td style="border-bottom:0px dashed #fff;"></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;font-size: 17px;">5:15pm&ndash;6:15pm</td>
+                <td style="border-bottom:0px;font-size: 17px"><b>Discussion: Future Directions</b></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;"></td>
+                <td style="border-bottom:0px;"></td>
+              </tr>
+              <tr>
+                <td style="border-bottom:1px dashed #000;padding-right:20px;"></td>
+                <td style="border-bottom:1px dashed #000;"></td>
+              </tr>
+
+
+              <tr>
+                <td style="border-bottom:0px dashed #fff;padding-right:20px;"></td>
+                <td style="border-bottom:0px dashed #fff;"></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;font-size: 17px;">6:15pm&ndash;6:30pm</td>
+                <td style="border-bottom:0px;font-size: 17px">Travel to Dinner</td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;"></td>
+                <td style="border-bottom:0px;"></td>
+              </tr>
+              <tr>
+                <td style="border-bottom:1px dashed #000;padding-right:20px;"></td>
+                <td style="border-bottom:1px dashed #000;"></td>
+              </tr>
+
+
+              <tr>
+                <td style="border-bottom:0px dashed #fff;padding-right:20px;"></td>
+                <td style="border-bottom:0px dashed #fff;"></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;font-size: 17px;">6:30pm&ndash;8:00pm</td>
+                <td style="border-bottom:0px;font-size: 17px">Dinner at <a href="https://statlerhotel.cornell.edu/food-drink/taverna-banfi" target="_blank">Taverna Banfi</a> <!--<font style="padding-right:2px">[</font><a href="https://maps.app.goo.gl/5Atxki9YudgdNuqP8" target="_blank">google&nbsp;map</a><font style="padding-left:1px">]</font>--></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;"></td>
+                <td style="border-bottom:0px;"></td>
+              </tr>
+              <tr>
+                <td style="border-bottom:0px dashed #000;padding-right:20px;"></td>
+                <td style="border-bottom:0px dashed #000;"></td>
+              </tr>
+
+
+              <tr>
+                <td style="padding-left:15px;background-color:#C41E3A;padding-right:0px;border-bottom:0px solid #000;font-size: 20px;font-weight: 400;color: #fff;padding-top: 25px;padding-bottom: 10px;padding-top: 10px; padding-bottom: 10px">Tuesday, June&nbsp;3</td>
+                <td style="border-bottom:0px solid #000;background-color:#C41E3A;"></td>
+              </tr>
+              
+              <tr>
+                <td style="border-bottom:0px solid #000;"></td>
+                <td style="border-bottom:0px solid #000;"></td>
+              </tr>
+              <tr>
+              <tr>
+                <td style="padding-left:15px;padding-right:20px;border-bottom:1px solid #000;"><b style="font-size:19px;">Time</b></td>
+                <td style="border-bottom:1px solid #000;"><b style="font-size:19px;">Agenda</b></td>
+              </tr>
+
+
+
+              <tr>
+                <td style="border-bottom:0px dashed #fff;padding-right:20px;"></td>
+                <td style="border-bottom:0px dashed #fff;"></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;font-size: 17px;">8:00am&ndash;9:00am</td>
+                <td style="border-bottom:0px;font-size: 17px">Breakfast</td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;"></td>
+                <td style="border-bottom:0px;"></td>
+              </tr>
+              <tr>
+                <td style="border-bottom:1px dashed #000;padding-right:20px;"></td>
+                <td style="border-bottom:1px dashed #000;"></td>
+              </tr>
+
+
+
+              <tr>
+                <td style="border-bottom:0px dashed #fff;padding-right:20px;"></td>
+                <td style="border-bottom:0px dashed #fff;"></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;font-size: 17px;">9:00am&ndash;10:30am</td>
+                <td style="border-bottom:0px;font-size: 18px;background-color:#36454F;padding-left: 10px;color:white">Session 5: Routing</td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;"></td>
+                <td style="border-bottom:0px;"></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;font-size: 17px;"></td>
+                <td style="border-bottom:0px;font-size: 17px"><b>Talk # 12:</b> Breaking the VLB Barrier: Randomized Routing With a Single Spraying Hop. <br><font style="border-bottom: 1px dotted;">Speaker</font>: <i>Robert Kleinberg (Cornell University)</i></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;"></td>
+                <td style="border-bottom:0px;"></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;font-size: 17px;"></td>
+                <td style="border-bottom:0px;font-size: 17px"><b>Talk # 13:</b> Random and Universal Connection Schedules for Reconfigurable Networks. <br><font style="border-bottom: 1px dotted;">Speaker</font>: <i>Tegan Wilson (Northeastern University)</i></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;"></td>
+                <td style="border-bottom:0px;"></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;font-size: 17px;"></td>
+                <td style="border-bottom:0px;font-size: 17px"><b>Talk # 14:</b> New Algorithmic Theory for Data Center Routing. <br><font style="border-bottom: 1px dotted;">Speaker</font>: <i>Miguel Ferreira (Carnegie Mellon University)</i></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;"></td>
+                <td style="border-bottom:0px;"></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;font-size: 17px;"></td>
+                <td style="border-bottom:0px;font-size: 17px"><b>Discussion / Panel</b></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;"></td>
+                <td style="border-bottom:0px;"></td>
+              </tr>
+              <tr>
+                <td style="border-bottom:1px dashed #000;padding-right:20px;"></td>
+                <td style="border-bottom:1px dashed #000;"></td>
+              </tr>
+
+
+
+              <tr>
+                <td style="border-bottom:0px dashed #fff;padding-right:20px;"></td>
+                <td style="border-bottom:0px dashed #fff;"></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;font-size: 17px;">10:30am&ndash;11:00am</td>
+                <td style="border-bottom:0px;font-size: 17px">Break</td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;"></td>
+                <td style="border-bottom:0px;"></td>
+              </tr>
+              <tr>
+                <td style="border-bottom:1px dashed #000;padding-right:20px;"></td>
+                <td style="border-bottom:1px dashed #000;"></td>
+              </tr>
+
+
+
+              <tr>
+                <td style="border-bottom:0px dashed #fff;padding-right:20px;"></td>
+                <td style="border-bottom:0px dashed #fff;"></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;font-size: 17px;">11:00am&ndash;12:30pm</td>
+                <td style="border-bottom:0px;font-size: 18px;background-color:#36454F;padding-left: 10px;color:white">Session 6: Scheduling</td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;"></td>
+                <td style="border-bottom:0px;"></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;font-size: 17px;"></td>
+                <td style="border-bottom:0px;font-size: 17px"><b>Talk # 15:</b> Scheduling Spllitable Jobs on Reconfigurable Machines. <br><font style="border-bottom: 1px dotted;">Speaker</font>: <i>Rajmohan Rajaraman (Northeastern University)</i></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;"></td>
+                <td style="border-bottom:0px;"></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;font-size: 17px;"></td>
+                <td style="border-bottom:0px;font-size: 17px"><b>Talk # 16:</b> Scheduling for Weighted Flow and Completion Times in Reconfigurable Networks. <br><font style="border-bottom: 1px dotted;">Speaker</font>: <i>Michael Dinitz (Johns Hopkins University)</i></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;"></td>
+                <td style="border-bottom:0px;"></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;font-size: 17px;"></td>
+                <td style="border-bottom:0px;font-size: 17px"><b>Talk # 17:</b> Anti-affinity in Reconfigurable Networks from the Perspective of Competitive Analysis. <br><font style="border-bottom: 1px dotted;">Speaker</font>: <i>Omer Wasim (Northeastern University)</i></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;"></td>
+                <td style="border-bottom:0px;"></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;font-size: 17px;"></td>
+                <td style="border-bottom:0px;font-size: 17px"><b>Discussion / Panel</b></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;"></td>
+                <td style="border-bottom:0px;"></td>
+              </tr>
+              <tr>
+                <td style="border-bottom:1px dashed #000;padding-right:20px;"></td>
+                <td style="border-bottom:1px dashed #000;"></td>
+              </tr>
+
+
+              <tr>
+                <td style="border-bottom:0px dashed #fff;padding-right:20px;"></td>
+                <td style="border-bottom:0px dashed #fff;"></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;font-size: 17px;">12:30pm&ndash;2:00pm</td>
+                <td style="border-bottom:0px;font-size: 17px">Lunch and Group Discussions</td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;"></td>
+                <td style="border-bottom:0px;"></td>
+              </tr>
+              <tr>
+                <td style="border-bottom:1px dashed #000;padding-right:20px;"></td>
+                <td style="border-bottom:1px dashed #000;"></td>
+              </tr>
+
+
+              <tr>
+                <td style="border-bottom:0px dashed #fff;padding-right:20px;"></td>
+                <td style="border-bottom:0px dashed #fff;"></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;font-size: 17px;">2:00pm&ndash;6:00pm</td>
+                <td style="border-bottom:0px;font-size: 17px">An excursion to <a href="https://parks.ny.gov/parks/taughannockfalls" target="_blank">Taughannock Falls</a>, <a href="https://www.cayugaridgewinery.com" target="_blank">Cayuga Ridge</a>, and <a href="https://www.thirstyowlsaratoga.com/the-winery" target="_blank">Thirsty Owl</a><br><font style="font-weight: 700;color:#000;">Travel:</font> A bus will leave Weill Hall at 2pm and drop everyone off at the hotel at 6pm.</td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;"></td>
+                <td style="border-bottom:0px;"></td>
+              </tr>
+              <tr>
+                <td style="border-bottom:1px dashed #000;padding-right:20px;"></td>
+                <td style="border-bottom:1px dashed #000;"></td>
+              </tr>
+
+              <tr>
+                <td style="border-bottom:0px dashed #fff;padding-right:20px;"></td>
+                <td style="border-bottom:0px dashed #fff;"></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;font-size: 17px;">6:00pm&ndash;6:30pm</td>
+                <td style="border-bottom:0px;font-size: 17px">Travel to Dinner</td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;"></td>
+                <td style="border-bottom:0px;"></td>
+              </tr>
+              <tr>
+                <td style="border-bottom:1px dashed #000;padding-right:20px;"></td>
+                <td style="border-bottom:1px dashed #000;"></td>
+              </tr>
+
+
+              <tr>
+                <td style="border-bottom:0px dashed #fff;padding-right:20px;"></td>
+                <td style="border-bottom:0px dashed #fff;"></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;font-size: 17px;">6:30pm&ndash;8:00pm</td>
+                <td style="border-bottom:0px;font-size: 17px">Dinner at <a href="https://www.northstarpub.com" target="_blank">Northstar Public House</a> <!--<font style="padding-right:2px">[</font><a href="https://maps.app.goo.gl/oVbGEZ54GAY1mVYcA" target="_blank">google&nbsp;map</a><font style="padding-left:1px">]</font>--></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;"></td>
+                <td style="border-bottom:0px;"></td>
+              </tr>
+              <tr>
+                <td style="border-bottom:0px dashed #000;padding-right:20px;"></td>
+                <td style="border-bottom:0px dashed #000;"></td>
+              </tr>
+
+
+              <tr>
+                <td style="padding-left:15px;background-color:#C41E3A;padding-right:0px;border-bottom:0px solid #000;font-size: 20px;font-weight: 400;color: #fff;padding-top: 25px;padding-bottom: 10px;padding-top: 10px; padding-bottom: 10px">Wednesday, June&nbsp;4</td>
+                <td style="border-bottom:0px solid #000;background-color:#C41E3A;"></td>
+              </tr>
+              
+              <tr>
+                <td style="border-bottom:0px solid #000;"></td>
+                <td style="border-bottom:0px solid #000;"></td>
+              </tr>
+              <tr>
+                <td style="padding-left:15px;padding-right:20px;border-bottom:1px solid #000;"><b style="font-size:19px;">Time</b></td>
+                <td style="border-bottom:1px solid #000;"><b style="font-size:19px;">Agenda</b></td>
+              </tr>
+
+
+
+              <tr>
+                <td style="border-bottom:0px dashed #fff;padding-right:20px;"></td>
+                <td style="border-bottom:0px dashed #fff;"></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;font-size: 17px;">8:00am&ndash;9:00am</td>
+                <td style="border-bottom:0px;font-size: 17px">Breakfast</td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;"></td>
+                <td style="border-bottom:0px;"></td>
+              </tr>
+              <tr>
+                <td style="border-bottom:1px dashed #000;padding-right:20px;"></td>
+                <td style="border-bottom:1px dashed #000;"></td>
+              </tr>
+
+
+
+              <tr>
+                <td style="border-bottom:0px dashed #fff;padding-right:20px;"></td>
+                <td style="border-bottom:0px dashed #fff;"></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;font-size: 17px;">9:00am&ndash;10:15am</td>
+                <td style="border-bottom:0px;font-size: 18px;background-color:#36454F;padding-left: 10px;color:white">Session 7: Network for ML Training I</td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;"></td>
+                <td style="border-bottom:0px;"></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;font-size: 17px;"></td>
+                <td style="border-bottom:0px;font-size: 17px"><b>Talk # 18:</b> TopoOpt: Co-optimizing Network Topology and Parallelization Strategy for Distributed Training Jobs. <br><font style="border-bottom: 1px dotted;">Speaker</font>: <i>Frank Wang (Massachusetts Institute of Technology)</i></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;"></td>
+                <td style="border-bottom:0px;"></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;font-size: 17px;"></td>
+                <td style="border-bottom:0px;font-size: 17px"><b>Talk # 19:</b> Obliviousness is a Bliss for ML Workloads. <br><font style="border-bottom: 1px dotted;">Speaker</font>: <i>Keting Chen (Cornell University)</i></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;"></td>
+                <td style="border-bottom:0px;"></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;font-size: 17px;"></td>
+                <td style="border-bottom:0px;font-size: 17px"><b>Talk # 20:</b> What would it take to reconfigure within a ML training step? <br><font style="border-bottom: 1px dotted;">Speaker</font>: <i>Daniel Amir (Technion)</i></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;"></td>
+                <td style="border-bottom:0px;"></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;font-size: 17px;"></td>
+                <td style="border-bottom:0px;font-size: 17px"><b>Discussion / Panel</b></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;"></td>
+                <td style="border-bottom:0px;"></td>
+              </tr>
+              <tr>
+                <td style="border-bottom:1px dashed #000;padding-right:20px;"></td>
+                <td style="border-bottom:1px dashed #000;"></td>
+              </tr>
+
+
+
+              <tr>
+                <td style="border-bottom:0px dashed #fff;padding-right:20px;"></td>
+                <td style="border-bottom:0px dashed #fff;"></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;font-size: 17px;">10:15am&ndash;10:45am</td>
+                <td style="border-bottom:0px;font-size: 17px">Break</td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;"></td>
+                <td style="border-bottom:0px;"></td>
+              </tr>
+              <tr>
+                <td style="border-bottom:1px dashed #000;padding-right:20px;"></td>
+                <td style="border-bottom:1px dashed #000;"></td>
+              </tr>
+
+
+
+              <tr>
+                <td style="border-bottom:0px dashed #fff;padding-right:20px;"></td>
+                <td style="border-bottom:0px dashed #fff;"></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;font-size: 17px;">10:45am&ndash;11:30pm</td>
+                <td style="border-bottom:0px;font-size: 18px;background-color:#36454F;padding-left: 10px;color:white">Session 8: Network for ML Training II</td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;"></td>
+                <td style="border-bottom:0px;"></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;font-size: 17px;"></td>
+                <td style="border-bottom:0px;font-size: 17px"><b>Talk # 21:</b> Throughput Bounds of Reconfigurable Networks: Insights and Reflections on Metrics for Collective Communication. <br><font style="border-bottom: 1px dotted;">Speaker</font>: <i>Vamsi Addanki (Technical University Berlin)</i></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;"></td>
+                <td style="border-bottom:0px;"></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;font-size: 17px;"></td>
+                <td style="border-bottom:0px;font-size: 17px"><b>Talk # 22:</b> ReCCL: Collective Communication Layer for Reconfigurable Networks. <br><font style="border-bottom: 1px dotted;">Speaker</font>: <i>Eric Ding (Cornell University)</i></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;"></td>
+                <td style="border-bottom:0px;"></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;font-size: 17px;"></td>
+                <td style="border-bottom:0px;font-size: 17px"><b>Discussion / Panel</b></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;"></td>
+                <td style="border-bottom:0px;"></td>
+              </tr>
+              <tr>
+                <td style="border-bottom:1px dashed #000;padding-right:20px;"></td>
+                <td style="border-bottom:1px dashed #000;"></td>
+              </tr>
+
+
+              <tr>
+                <td style="border-bottom:0px dashed #fff;padding-right:20px;"></td>
+                <td style="border-bottom:0px dashed #fff;"></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;font-size: 17px;">11:30pm&ndash;12:30pm</td>
+                <td style="border-bottom:0px;font-size: 17px"><b>Discussion: Future Directions</b></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;font-size: 17px;"></td>
+                <td style="border-bottom:0px;font-size: 17px">Closing Remarks</td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;"></td>
+                <td style="border-bottom:0px;"></td>
+              </tr>
+              <tr>
+                <td style="border-bottom:1px dashed #000;padding-right:20px;"></td>
+                <td style="border-bottom:1px dashed #000;"></td>
+              </tr>
+
+              <!--<tr>
+                <td style="border-bottom:0px dashed #fff;padding-right:20px;"></td>
+                <td style="border-bottom:0px dashed #fff;"></td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;font-size: 17px;">1:00pm&ndash;2:00pm</td>
+                <td style="border-bottom:0px;font-size: 17px">Lunch</td>
+              </tr>
+              <tr style="background-color:#fff;">
+                <td style="border-bottom:0px;padding-left:15px;padding-right:20px;"></td>
+                <td style="border-bottom:0px;"></td>
+              </tr>
+              <tr>
+                <td style="border-bottom:1px dashed #000;padding-right:20px;"></td>
+                <td style="border-bottom:1px dashed #000;"></td>
+              </tr>-->
+
+              </tbody>
+            </table>
+
+            
+
+            
+
+            
+          </div>
+        </div>
+        
+        <p style="padding-bottom: 50px;"></p>
+
+      <!--</div>-->
+    </div>
+  </div>
+</section>
+
+
+
+
+<!--<hr style="margin-bottom: 19px;">
+
+
+<footer id="footer" class="even-section-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 col-lg-offset-1">
+        © 2025            
+      </div>
+    </div>
+  </div>
+</footer>-->
+
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Scrolling Nav JavaScript -->
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/scrolling-nav.js"></script>
+
+<!-- Collapsible JavaScript -->
+<script src="javascripts/scale.fix.js"></script>
+<script>
+  document.querySelectorAll(".collapsible").forEach(function(current) {
+
+  let toggler = document.createElement("div");
+  toggler.className = "toggler";
+  current.appendChild(toggler);
+
+  toggler.addEventListener("click", function(e) {
+      current.classList.toggle("open");
+    }, false);
+
+  });
+</script>
+
+<script type="application/json" id="__NUXT_DATA__" data-ssr="true" data-src="/_payload.json">[{"state":1,"_errors":3,"serverRendered":5,"path":6,"prerenderedAt":7},["Reactive",2],{},["Reactive",4],{},true,"/",1730395468529]</script><script>window.__NUXT__={};window.__NUXT__.config={public:{content:{locales:[],defaultLocale:"",integrity:1730395454410,experimental:{stripQueryParameters:false,clientDB:false},respectPathCase:false,api:{baseURL:"/api/_content"},navigation:{fields:[]},tags:{p:"prose-p",a:"prose-a",blockquote:"prose-blockquote","code-inline":"prose-code-inline",code:"prose-code",em:"prose-em",h1:"prose-h1",h2:"prose-h2",h3:"prose-h3",h4:"prose-h4",h5:"prose-h5",h6:"prose-h6",hr:"prose-hr",img:"prose-img",ul:"prose-ul",ol:"prose-ol",li:"prose-li",strong:"prose-strong",table:"prose-table",thead:"prose-thead",tbody:"prose-tbody",td:"prose-td",th:"prose-th",tr:"prose-tr"},highlight:false,wsUrl:"",documentDriven:false,host:"",trailingSlash:false,anchorLinks:{depth:4,exclude:[1]}}},app:{baseURL:"/",buildAssetsDir:"/_nuxt/",cdnURL:""}}</script><script type="module" src="purdue-isl.github.io_files/entry.01c64da1.js" crossorigin=""></script>
+
+</body>
+
+</html>
+

@@ -1,0 +1,202 @@
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans:200,300,300i,400,400i,500,600,700,800);
+
+/*!
+ * Start Bootstrap - Scrolling Nav HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+b {
+    color: #000;
+}
+
+@media(max-width:767px) {
+    .navbar {
+        padding: 0px 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0px 0;
+    }
+}
+
+
+/* Sections */
+.even-section {
+    font-size: 17px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    background: #fff;
+}
+
+
+.odd-section {
+    font-size: 17px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    background: #eee;
+}
+
+#intro {
+    text-align: center;
+    padding-top: 78px;
+    margin-bottom: -5px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#intro .jumbotron {
+    background-color: white;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.page-header {
+    margin-top: 0px;
+}
+
+.even-section .page-header {
+    border-bottom: 1px solid #ddd;
+}
+
+.odd-section .page-header {
+    border-bottom: 1px solid #ccc;
+}
+
+#footer {
+    text-align: center;
+    padding: 0 0 40px 0;
+    font-size: 16px;
+}
+
+#footer a {
+    color: #666;
+}
+
+#footer a:hover {
+    text-decoration: none;
+    color: #222;
+}
+
+#publications p {
+    margin-bottom: 1.2em;
+}
+
+a {
+  /*color:#337ab0;*/
+  /*color:#007bb6;*/
+  color: #006eac;
+  text-decoration:none;
+  font-weight: 500;
+}
+
+a:hover {
+  color:#8c1515;
+  border-bottom: 1px #8c1515 dotted;
+}
+
+.bs {
+  text-decoration:underline;
+  text-decoration-thickness: 1px;
+  padding-right: 3px;
+  font-weight: 500;
+}
+
+.bs:hover {
+  border-bottom: 0px #8c1515 dotted;
+  text-decoration:underline;
+  text-decoration-thickness: 1px;
+}
+
+.bs1 {
+  text-decoration:none;
+  /*border-bottom: 1px dotted;*/
+  color:#222;
+  font-weight: 400;
+}
+
+.bs1:hover {
+  border-bottom: 1px dotted;
+  color:#222;
+}
+
+.bs2 {
+  text-decoration:none;
+  /*border-bottom: 1px dotted;*/
+  color:#222;
+  font-weight: 400;
+}
+
+.bs2:hover {
+  border-bottom: 0px dotted;
+  color:#222;
+}
+
+table {
+  width:100%;
+  border-collapse:collapse;
+}
+
+th, td {
+  text-align:left;
+  padding:5px 0px;
+  border-bottom:1px dashed #e5e5e5;
+}
+
+.collapsible {
+  position: relative;
+  padding-bottom: 3.25em;
+}
+.collapsible:not(.open) > * {
+  display: none;
+}
+.collapsible:not(.open) > p:first-child {
+  display: block;
+}
+.collapsible > .toggler {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  /*display: block;
+  width: 100%;
+  background: rgb(255,255,255);
+  text-align: center;*/
+  cursor: pointer;
+
+  background-color: #008CBA;
+  width: 115px;
+  border: 2px solid #008cba;
+  border-radius: 4px;
+  color: white;
+  padding: 5px 2px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.collapsible > .toggler::after {
+  content: "\25bd" " " "Show More";
+  font-size: 15px;
+}
+.collapsible.open > .toggler::after {
+  content: "\25b3" " " "Show Less";
+  font-size: 15px;
+}
