@@ -12,6 +12,14 @@
 
   <title>Workshop on Reconfigurable Networks 2025</title>
 
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+  <style>
+  .mySlides {display:none;border:0px solid #000;padding-bottom:0px}
+  .w3-left, .w3-right, .w3-badge {cursor:pointer}
+  .w3-badge {height:13px;width:13px;padding:0;}
+  .w3-border {border:1px solid white!important}
+  </style>
+
   <!-- Bootstrap Core CSS -->
   <link href="css/bootstrap.min.css?version=6969" rel="stylesheet">
 
@@ -447,7 +455,50 @@ button,select{text-transform:none}[type=button],[type=reset],[type=submit],butto
         </div>
         <div class="row">
           <div class="col-md-12">
-            <table style="margin-top:0px;">
+
+          <div class="w3-content w3-display-container" style="max-width:100%">
+            <img class="mySlides" src="img/group-1.png" style="width:100%">
+            <img class="mySlides" src="img/group-2.png" style="width:100%">
+            <img class="mySlides" src="img/group-3.png" style="width:100%">
+            <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+              <!--<div class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</div>
+              <div class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</div>-->
+              <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+              <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+              <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+            </div>
+          </div>
+
+          <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+              showDivs(slideIndex += n);
+            }
+
+            function currentDiv(n) {
+              showDivs(slideIndex = n);
+            }
+
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("demo");
+              if (n > x.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" w3-white", "");
+              }
+              x[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " w3-white";
+            }
+            </script>
+
+            <table style="margin-top:30px;">
             <col width="1%">
             <col width="90%">
             <tbody>
@@ -978,7 +1029,7 @@ button,select{text-transform:none}[type=button],[type=reset],[type=submit],butto
               </tr>
               <tr style="background-color:#fff;">
                 <td style="border-bottom:0px;padding-left:15px;padding-right:20px;font-size: 17px;"></td>
-                <td style="border-bottom:0px;font-size: 17px"><b>Talk # 12:</b> Hardware Feasability for (Semi-)Oblivious Reconfigurable Networks. <br><font style="border-bottom: 1px dotted;">Speaker</font>: <i>Yunxi Shen (Cornell University)</i></td>
+                <td style="border-bottom:0px;font-size: 17px"><b>Talk # 12:</b> Hardware Feasability for Semi-Oblivious Reconfigurable Networks. <br><font style="border-bottom: 1px dotted;">Speaker</font>: <i>Yunxi Shen (Cornell University)</i></td>
               </tr>
               <tr style="background-color:#fff;">
                 <td style="border-bottom:0px;padding-left:15px;padding-right:20px;"></td>
